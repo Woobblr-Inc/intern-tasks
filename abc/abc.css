@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+}
+
+.box1 {
+  height: 50vh;
+  width: 30vw;
+  background-color: burlywood;
+}
+
+.box2 {
+  height: 50vh;
+  width: 30vw;
+  background-color: greenyellow;
+  margin-left: auto;
+}
+
+.heading {
+  background-color: grey;
+  display: inline;
+}
+.heading2 {
+  background-color: grey;
+  display: inline;
+}

@@ -1,6 +1,11 @@
 * {
   padding: 0;
   margin: 0;
+  color: rgb(255, 255, 255);
+}
+
+body {
+  background-color: rgb(48, 48, 48);
 }
 
 nav {
@@ -10,6 +15,10 @@ nav {
   padding-left: 5%;
   padding-right: 5%;
   background-color: grey;
+}
+
+.logo {
+  align-self: flex-end;
 }
 
 .nav-items {
@@ -27,4 +36,30 @@ nav {
   text-decoration: none;
   color: white;
   font-size: 1.5rem;
+}
+
+.burger-icons {
+  cursor: pointer;
+}
+
+.burger-icons .lines {
+  width: 1rem;
+  margin-top: 3px;
+  height: 2px;
+  background-color: rgb(0, 0, 0);
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-items ul {
+    display: none;
+  }
+
+  .nav-items {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .burger-icons .lines {
+    display: block !important;
+  }
 }
