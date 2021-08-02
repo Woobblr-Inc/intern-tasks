@@ -1,42 +1,82 @@
-*{
-    margin: 11px;
-    padding: 0px;
-    background-color: black;
+* {
+  padding: 0px;
+  margin: 11px;
+  color: black;
+}
+
+body {
+  background-color: black;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 10%;
+  background-color: white;
+  height: 65px;
+}
+
+
+#logo {
+  margin: 10px 50px;
+  
+}
+
+#logo img {
+  height: 60px;
+  margin: -21px 0px;
+  font-size: 2.1rem;
+}
+
+.nav-items {
+  width: 40%;
+}
+
+.nav-items ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.nav-items ul a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  padding: 20px 5px;
+  border-radius: 20px;
+}
+
+.burger-icons {
+  cursor: pointer;
+}
+
+.burger-icons .lines {
+  width: 1rem;
+  margin-top: 3px;
+  height: 2px;
+  background-color: green;
+  display: none;
+}
+
+@media only screen and (max-width: 950px) {
+  .nav-items ul {
+    display: none;
   }
-  #navbar{
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      background-color: white;
-      height: 65px;
-        }
-      #logo{
-       margin:10px 50px;
-       }
-      #logo img{
-      height: 60px;
-      margin: -21px 0px;
-      }
-      #navbar div{
-          color: black;
-          background-color: white;
-          font-size: 2.1rem;
-      }
-       #navbar ul{
-        display: flex;
-       }
-      #navbar ul li{
-        list-style: none;
-        font-size: 1.5rem;
-       }
-      #navbar ul li a{
-        color: white;
-      display: inline-block;
-      padding: 3px 22px;
-      border-radius: 20px;
-      text-decoration: none;
-      }
-       #navbar ul li a:hover{
-        color:black;
-        background-color: rgb(84, 230, 84);
-      }
+
+  .nav-items {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .burger-icons .lines {
+    display: block !important;
+  }
+}
+
+.nav-items ul li a:hover{
+
+  color:ghostwhite;
+  background-color:rgb(16, 218, 9);
+}
