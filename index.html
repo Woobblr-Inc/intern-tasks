@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./resources/css/style.css" />
+    <link rel="stylesheet" href="./resources/css/utility.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+    <title>COVID-19 Project</title>
+  </head>
+  <body>
+    <header>
+      
+      <nav>
+        <div class="logo">
+          <img src="./resources/img/logo.png" alt="" />
+          <p>COVID-19<br />STATS</p>
+        </div>
+        <input type="checkbox" id="click">
+         <label for="click" class="menu-btn">
+         <i class="fas fa-bars"></i>
+         </label>
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contactme.html">Contact Me</a></li>
+         </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="stats">
+        <div class="latest-report">
+          <div class="country">
+            <div class="name">Loading...</div>
+            <div class="change-country">change</div>
+            <div class="search-country hide">
+              <div class="search-box">
+                <input
+                  type="text"
+                  id="search-input"
+                  placeholder="Search Country..."
+                />
+                <img class="close" src="./resources/img/close.svg" alt="" />
+              </div>
+              <div class="country-list"></div>
+            </div>
+          </div>
+          <div class="total-cases">
+            <div class="title">Total Cases</div>
+            <div class="value">0</div>
+            <div class="new-value">+0</div>
+          </div>
+          <div class="recovered">
+            <div class="title">Recovered</div>
+            <div class="value">0</div>
+            <div class="new-value">+0</div>
+          </div>
+          <div class="deaths">
+            <div class="title">Deaths</div>
+            <div class="value">0</div>
+            <div class="new-value">+0</div>
+          </div>
+        </div>
+        <div class="chart">
+          <canvas id="axes_line_chart"></canvas>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+ <footer class = "footer container">
+  <div class = "row">
+    <div class = "col">
+      <h3 class = "footer-title">about</h3>
+      <p class = "text">Heya!</p>
+      <div class = "social-links">
+        <a href = "https://twitter.com/home"><i class = "fab fa-twitter"></i></a>
+        <a href = "https://www.linkedin.com/in/sumantjadhav2003/"><i class = "fab fa-linkedin"></i></a>
+        <a href = "https://www.instagram.com/"><i class = "fab fa-instagram"></i></a>
+        <a href = "https://github.com/bandya2003"><i class = "fab fa-github"></i></a>
+      </div>
+    </div>
+
+    <div class = "col">
+      <h3 class = "footer-title">links</h3>
+      <div class = "footer-links">
+        <a href = "index.html" class = "text">
+          <i class = "fas fa-long-arrow-alt-right"></i>
+          home
+        </a>
+        <a href = "contactme.html" class = "text">
+          <i class = "fas fa-long-arrow-alt-right"></i>
+          contact
+        </a>
+      </div>
+    </div>
+
+    
+<!--footer-->
+    <div class = "col">
+      <h3 class = "footer-title">have a question?</h3>
+      <div>
+        <span>
+          <i class = "fas fa-map-marker-alt"></i>
+        </span>
+        <span class = "text">Chadan Chs ,Badlapur(EAST), India</span>
+      </div>
+
+      <div>
+        <span>
+          <i class = "fas fa-phone"></i>
+        </span>
+        <span class = "text">+91 0000</span>
+      </div>
+
+      <div>
+        <span>
+          <i class = "fas fa-envelope"></i>
+        </span>
+        <span class = "text">bandyaprime2003@domain.com</span>
+      </div>
+    </div>
+  </div>
+
+  <div class = "footer-text">
+    <p class = "text">Copyright &copy; 2022 All rights reserved | BANDYA2003</p>
+  </div>
+</footer>
+<!-- end of footer -->
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+      integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI="
+      crossorigin="anonymous"
+    ></script>
+    <script src="resources/js/countries.js"></script>
+    <script src="resources/js/app.js"></script>
+  </body>
+</html>
